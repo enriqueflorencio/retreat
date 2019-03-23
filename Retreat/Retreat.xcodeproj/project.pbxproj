@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		75A11C7E2246AE78003FD7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A11C7D2246AE78003FD7E9 /* AppDelegate.swift */; };
-		75A11C802246AE79003FD7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A11C7F2246AE79003FD7E9 /* ViewController.swift */; };
 		75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C812246AE79003FD7E9 /* Main.storyboard */; };
 		75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C842246AE79003FD7E9 /* Assets.xcassets */; };
 		75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */; };
+		9E9E3A582246B51500C8F320 /* UITableViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A572246B51500C8F320 /* UITableViewController+Style.swift */; };
+		9E9E3A5A2246B52800C8F320 /* LoginViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A592246B52800C8F320 /* LoginViewController+Style.swift */; };
+		9E9E3A5C2246B53800C8F320 /* RegisterViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5B2246B53800C8F320 /* RegisterViewController+Style.swift */; };
+		9E9E3A5E2246B55C00C8F320 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5D2246B55C00C8F320 /* LoginViewController.swift */; };
+		9E9E3A602246B56A00C8F320 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */; };
+		9E9E3A622246B58200C8F320 /* NewsFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A612246B58200C8F320 /* NewsFeedTableViewController.swift */; };
+		9E9E3A662246B61D00C8F320 /* ChatUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */; };
+		9E9E3A682246B63400C8F320 /* ChatUINavigationViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A672246B63400C8F320 /* ChatUINavigationViewController+Style.swift */; };
+		A67D23A4C6DBFCD604B62415 /* Pods_Retreat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B172E331ED16F3902EECBC /* Pods_Retreat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46B172E331ED16F3902EECBC /* Pods_Retreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Retreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5077E55DB680D146CA0203BC /* Pods-Retreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Retreat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Retreat/Pods-Retreat.release.xcconfig"; sourceTree = "<group>"; };
 		75A11C7A2246AE78003FD7E9 /* Retreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Retreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A11C7D2246AE78003FD7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75A11C7F2246AE79003FD7E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75A11C822246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75A11C842246AE79003FD7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A11C872246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A11C892246AE79003FD7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E9E3A572246B51500C8F320 /* UITableViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Style.swift"; sourceTree = "<group>"; };
+		9E9E3A592246B52800C8F320 /* LoginViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Style.swift"; sourceTree = "<group>"; };
+		9E9E3A5B2246B53800C8F320 /* RegisterViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Style.swift"; sourceTree = "<group>"; };
+		9E9E3A5D2246B55C00C8F320 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9E9E3A612246B58200C8F320 /* NewsFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewController.swift; sourceTree = "<group>"; };
+		9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUINavigationController.swift; sourceTree = "<group>"; };
+		9E9E3A672246B63400C8F320 /* ChatUINavigationViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatUINavigationViewController+Style.swift"; sourceTree = "<group>"; };
+		C3B76EA9E45EC29F718FC2E1 /* Pods-Retreat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Retreat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Retreat/Pods-Retreat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67D23A4C6DBFCD604B62415 /* Pods_Retreat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				75A11C7C2246AE78003FD7E9 /* Retreat */,
 				75A11C7B2246AE78003FD7E9 /* Products */,
+				872A4EAD34FA2AD2F44DE75F /* Pods */,
+				C62C05FD37CC9F4405ABFC17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,62 @@
 		75A11C7C2246AE78003FD7E9 /* Retreat */ = {
 			isa = PBXGroup;
 			children = (
+				9E9E3A502246B43A00C8F320 /* Controller */,
+				9E9E3A4F2246B43500C8F320 /* View */,
+				9E9E3A4E2246B41F00C8F320 /* Model */,
 				75A11C7D2246AE78003FD7E9 /* AppDelegate.swift */,
-				75A11C7F2246AE79003FD7E9 /* ViewController.swift */,
 				75A11C812246AE79003FD7E9 /* Main.storyboard */,
 				75A11C842246AE79003FD7E9 /* Assets.xcassets */,
 				75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */,
 				75A11C892246AE79003FD7E9 /* Info.plist */,
 			);
 			path = Retreat;
+			sourceTree = "<group>";
+		};
+		872A4EAD34FA2AD2F44DE75F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3B76EA9E45EC29F718FC2E1 /* Pods-Retreat.debug.xcconfig */,
+				5077E55DB680D146CA0203BC /* Pods-Retreat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E9E3A4E2246B41F00C8F320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E9E3A4F2246B43500C8F320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E3A572246B51500C8F320 /* UITableViewController+Style.swift */,
+				9E9E3A592246B52800C8F320 /* LoginViewController+Style.swift */,
+				9E9E3A5B2246B53800C8F320 /* RegisterViewController+Style.swift */,
+				9E9E3A672246B63400C8F320 /* ChatUINavigationViewController+Style.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E9E3A502246B43A00C8F320 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E3A5D2246B55C00C8F320 /* LoginViewController.swift */,
+				9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */,
+				9E9E3A612246B58200C8F320 /* NewsFeedTableViewController.swift */,
+				9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C62C05FD37CC9F4405ABFC17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46B172E331ED16F3902EECBC /* Pods_Retreat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A11C8C2246AE79003FD7E9 /* Build configuration list for PBXNativeTarget "Retreat" */;
 			buildPhases = (
+				F73B42C37744E7C1033C1E41 /* [CP] Check Pods Manifest.lock */,
 				75A11C762246AE78003FD7E9 /* Sources */,
 				75A11C772246AE78003FD7E9 /* Frameworks */,
 				75A11C782246AE78003FD7E9 /* Resources */,
+				58348886422E116B5D7E9B09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +201,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58348886422E116B5D7E9B09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Retreat/Pods-Retreat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Retreat/Pods-Retreat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F73B42C37744E7C1033C1E41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Retreat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75A11C762246AE78003FD7E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A11C802246AE79003FD7E9 /* ViewController.swift in Sources */,
+				9E9E3A5E2246B55C00C8F320 /* LoginViewController.swift in Sources */,
+				9E9E3A602246B56A00C8F320 /* RegisterViewController.swift in Sources */,
+				9E9E3A662246B61D00C8F320 /* ChatUINavigationController.swift in Sources */,
+				9E9E3A622246B58200C8F320 /* NewsFeedTableViewController.swift in Sources */,
 				75A11C7E2246AE78003FD7E9 /* AppDelegate.swift in Sources */,
+				9E9E3A682246B63400C8F320 /* ChatUINavigationViewController+Style.swift in Sources */,
+				9E9E3A5C2246B53800C8F320 /* RegisterViewController+Style.swift in Sources */,
+				9E9E3A5A2246B52800C8F320 /* LoginViewController+Style.swift in Sources */,
+				9E9E3A582246B51500C8F320 /* UITableViewController+Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,16 +411,17 @@
 		};
 		75A11C8D2246AE79003FD7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B76EA9E45EC29F718FC2E1 /* Pods-Retreat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2E24SPH2ZV;
+				DEVELOPMENT_TEAM = 48ZHJ48H3S;
 				INFOPLIST_FILE = Retreat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eflorencio.Retreat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BizetRodriguez.Retreat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,16 +430,17 @@
 		};
 		75A11C8E2246AE79003FD7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5077E55DB680D146CA0203BC /* Pods-Retreat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2E24SPH2ZV;
+				DEVELOPMENT_TEAM = 48ZHJ48H3S;
 				INFOPLIST_FILE = Retreat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eflorencio.Retreat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BizetRodriguez.Retreat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
