@@ -1,0 +1,16 @@
+platform :ios, '9.0'
+
+target 'Retreat' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Retreat
+	pod 'ChameleonFramework/Swift'
+	pod 'lottie-ios'
+	pod 'TwilioVideo', '~> 2.8'
+	pod 'Firebase'
+    	pod 'Firebase/Auth'
+    	pod 'Firebase/Database'
+    	pod 'Firebase/Core'
+    	pod 'SVProgressHUD'
+end
