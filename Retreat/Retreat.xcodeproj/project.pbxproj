@@ -11,7 +11,6 @@
 		75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C812246AE79003FD7E9 /* Main.storyboard */; };
 		75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C842246AE79003FD7E9 /* Assets.xcassets */; };
 		75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */; };
-		75CAAD152246C1D700B82BD6 /* testfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAAD142246C1D700B82BD6 /* testfile.swift */; };
 		9E9E3A582246B51500C8F320 /* UITableViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A572246B51500C8F320 /* UITableViewController+Style.swift */; };
 		9E9E3A5A2246B52800C8F320 /* LoginViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A592246B52800C8F320 /* LoginViewController+Style.swift */; };
 		9E9E3A5C2246B53800C8F320 /* RegisterViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5B2246B53800C8F320 /* RegisterViewController+Style.swift */; };
@@ -32,7 +31,6 @@
 		75A11C842246AE79003FD7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A11C872246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A11C892246AE79003FD7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75CAAD142246C1D700B82BD6 /* testfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testfile.swift; sourceTree = "<group>"; };
 		9E9E3A572246B51500C8F320 /* UITableViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Style.swift"; sourceTree = "<group>"; };
 		9E9E3A592246B52800C8F320 /* LoginViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Style.swift"; sourceTree = "<group>"; };
 		9E9E3A5B2246B53800C8F320 /* RegisterViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Style.swift"; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */,
 				9E9E3A612246B58200C8F320 /* NewsFeedTableViewController.swift */,
 				9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */,
-				75CAAD142246C1D700B82BD6 /* testfile.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9E3A5E2246B55C00C8F320 /* LoginViewController.swift in Sources */,
-				75CAAD152246C1D700B82BD6 /* testfile.swift in Sources */,
 				9E9E3A602246B56A00C8F320 /* RegisterViewController.swift in Sources */,
 				9E9E3A662246B61D00C8F320 /* ChatUINavigationController.swift in Sources */,
 				9E9E3A622246B58200C8F320 /* NewsFeedTableViewController.swift in Sources */,
