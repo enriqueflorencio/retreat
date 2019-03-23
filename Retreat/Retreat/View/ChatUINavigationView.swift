@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatUINavigationViewController_Style: UINavigationController {
+class ChatUI: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

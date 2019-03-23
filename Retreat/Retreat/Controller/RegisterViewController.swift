@@ -8,7 +8,17 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: RegisterView {
+    
+    // MARK: -IBOutlets
+    @IBOutlet var usernameTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var genderTextField: UITextField!
+    @IBOutlet var ageTextField: UITextField!
+    @IBOutlet var registerButton: UIButton!
+    @IBOutlet var loginButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +26,23 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerButtonPressed(_ sender: UIButton) {
+        guard let username = usernameTextField.text,
+            let email = emailTextField.text,
+            let password = passwordTextField.text,
+            let gender = genderTextField.text,
+            let age = ageTextField.text else {
+                print("Error inside one of the text fields")
+                
+                return
+        }
+        
+        performSegue(withIdentifier: "goToNewsFeedFromRegister", sender: nil)
     }
-    */
-
+    
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToLoginFromRegister", sender: nil)
+    }
+    
 }
