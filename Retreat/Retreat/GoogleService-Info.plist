@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>153433064716-kq7cenjm70qpcuisa62g8e6rf3f0kqmi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.153433064716-kq7cenjm70qpcuisa62g8e6rf3f0kqmi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC1kxPa7Rn0j_A4mqcIUz8HTrgX7F1nlf4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>153433064716</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.eflorencio.Retreat</string>
+	<key>PROJECT_ID</key>
+	<string>retreat-443c6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>retreat-443c6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:153433064716:ios:85bcc5ab86a55254</string>
+	<key>DATABASE_URL</key>
+	<string>https://retreat-443c6.firebaseio.com</string>
+</dict>
+</plist>

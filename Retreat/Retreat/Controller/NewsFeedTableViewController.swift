@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class NewsFeedTableViewController: UITableViewController {
 
@@ -17,11 +19,10 @@ class NewsFeedTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        
+        myTableView.separatorStyle = .none
     }
 
     // MARK: - Table view data source
@@ -94,5 +95,18 @@ class NewsFeedTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func pressedLogOut(_ sender: UIBarButtonItem) {
+        SVProgressHUD.show(withStatus: "Signing out...")
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+            SVProgressHUD.showSuccess(withStatus: "Signed out")
+        }
+        catch {
+            SVProgressHUD.showError(withStatus: "Error signing out")
+        }
+    }
+    
 
 }

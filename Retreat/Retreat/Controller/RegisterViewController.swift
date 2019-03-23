@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class RegisterViewController: RegisterView {
     
@@ -27,17 +29,33 @@ class RegisterViewController: RegisterView {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
+        
+        SVProgressHUD.show(withStatus: "Registering...")
+        
         guard let username = usernameTextField.text,
             let email = emailTextField.text,
             let password = passwordTextField.text,
             let gender = genderTextField.text,
             let age = ageTextField.text else {
-                print("Error inside one of the text fields")
+                fatalError("Error inside one of the text fields")
                 
-                return
         }
         
-        performSegue(withIdentifier: "goToNewsFeedFromRegister", sender: nil)
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            SVProgressHUD.dismiss()
+            if error != nil {
+                SVProgressHUD.showError(withStatus: "Error Registering...")
+                SVProgressHUD.dismiss(withDelay: 1)
+                print(error!)
+            }
+            else {
+                SVProgressHUD.showSuccess(withStatus: "Sucessfully Registered!")
+                SVProgressHUD.dismiss(withDelay: 1)
+                self.performSegue(withIdentifier: "goToNewsFeedFromRegister", sender: nil)
+            }
+        }
+        
+        
     }
     
     

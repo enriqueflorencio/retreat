@@ -8,6 +8,8 @@
 
 import UIKit
 import Lottie
+import Firebase
+import SVProgressHUD
 
 class LoginViewController: LoginView {
     
@@ -37,13 +39,28 @@ class LoginViewController: LoginView {
     
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        SVProgressHUD.show(withStatus: "Loading...")
+        
         guard let username = usernameTextField.text, let password = passwordTextField.text else {
             print("No input for text field")
-            
+            SVProgressHUD.dismiss()
             return
         }
         
-        performSegue(withIdentifier: "goToNewsFeedFromLogin", sender: nil)
+        Auth.auth().signIn(withEmail: username, password: password) { (user, error) in
+            SVProgressHUD.dismiss()
+            if error != nil {
+                SVProgressHUD.showError(withStatus: "Error With Login...")
+                SVProgressHUD.dismiss(withDelay: 1)
+                print(error!)
+            }
+            else {
+                SVProgressHUD.showSuccess(withStatus: "Sucessfully Logged In!")
+                SVProgressHUD.dismiss(withDelay: 1)
+                self.performSegue(withIdentifier: "goToNewsFeedFromLogin", sender: self)
+            }
+        }
+        
         
     }
     
