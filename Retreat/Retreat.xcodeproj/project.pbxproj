@@ -18,6 +18,7 @@
 		9E9E3A602246B56A00C8F320 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */; };
 		9E9E3A662246B61D00C8F320 /* ChatUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */; };
 		9E9E3A682246B63400C8F320 /* ChatUINavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A672246B63400C8F320 /* ChatUINavigationView.swift */; };
+		9ECA22802246EB35006C558A /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ECA227F2246EB35006C558A /* heart.json */; };
 		A67D23A4C6DBFCD604B62415 /* Pods_Retreat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B172E331ED16F3902EECBC /* Pods_Retreat.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUINavigationController.swift; sourceTree = "<group>"; };
 		9E9E3A672246B63400C8F320 /* ChatUINavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUINavigationView.swift; sourceTree = "<group>"; };
+		9ECA227F2246EB35006C558A /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = SOURCE_ROOT; };
 		C3B76EA9E45EC29F718FC2E1 /* Pods-Retreat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Retreat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Retreat/Pods-Retreat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		75A11C7C2246AE78003FD7E9 /* Retreat */ = {
 			isa = PBXGroup;
 			children = (
+				9ECA227F2246EB35006C558A /* heart.json */,
 				9E9E3A502246B43A00C8F320 /* Controller */,
 				9E9E3A4F2246B43500C8F320 /* View */,
 				9E9E3A4E2246B41F00C8F320 /* Model */,
@@ -192,6 +195,7 @@
 			files = (
 				75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */,
 				75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */,
+				9ECA22802246EB35006C558A /* heart.json in Resources */,
 				75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

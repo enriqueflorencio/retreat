@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class LoginViewController: LoginView {
     
@@ -17,10 +18,21 @@ class LoginViewController: LoginView {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var registerButton: UIButton!
+    @IBOutlet var animationView: AnimationView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let newAnimationView = AnimationView(name: "heart")
+        newAnimationView.contentMode = .scaleAspectFit
+        newAnimationView.backgroundColor = .clear
+        newAnimationView.loopMode = .loop
+//        newAnimationView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        newAnimationView.frame = animationView.bounds
+        animationView.addSubview(newAnimationView)
+        
+        newAnimationView.play()
     }
     
     

@@ -1,5 +1,5 @@
 //
-//  LoginViewController+Style.swift
+//  RegisterViewController+Style.swift
 //  Retreat
 //
 //  Created by Bizet Rodriguez on 3/23/19.
@@ -7,15 +7,14 @@
 //
 
 import UIKit
-import ChameleonFramework
 
-class LoginView: UIViewController {
+class RegisterView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.flatPinkColorDark()
-      
+        
         keyboardDismiss()
     }
     
@@ -24,15 +23,5 @@ class LoginView: UIViewController {
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

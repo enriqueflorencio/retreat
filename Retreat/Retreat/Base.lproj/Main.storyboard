@@ -18,11 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-Gb-GPH">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-Gb-GPH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retreat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7W-25-oGO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retreat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7W-25-oGO">
                                         <rect key="frame" x="120" y="72" width="135" height="43"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="135" id="hdM-8t-SCf"/>
                                             <constraint firstAttribute="height" constant="43" id="tET-Rb-g8F"/>
@@ -31,13 +32,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="MQc-Fb-cP4" customClass="AnimationView" customModule="Retreat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="130.5" width="375" height="203"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="B7W-25-oGO" firstAttribute="top" secondItem="hWC-Gb-GPH" secondAttribute="top" constant="72" id="4ms-ld-5Vc"/>
+                                    <constraint firstAttribute="trailing" secondItem="MQc-Fb-cP4" secondAttribute="trailing" id="5a7-Xr-NS7"/>
                                     <constraint firstAttribute="trailing" secondItem="B7W-25-oGO" secondAttribute="trailing" constant="120" id="Bx3-x2-Wsb"/>
+                                    <constraint firstAttribute="bottom" secondItem="MQc-Fb-cP4" secondAttribute="bottom" id="ZlW-Kx-m2q"/>
                                     <constraint firstItem="B7W-25-oGO" firstAttribute="centerX" secondItem="hWC-Gb-GPH" secondAttribute="centerX" id="gWP-fD-Bt5"/>
                                     <constraint firstItem="B7W-25-oGO" firstAttribute="leading" secondItem="hWC-Gb-GPH" secondAttribute="leading" constant="120" id="gfn-3N-a13"/>
+                                    <constraint firstItem="MQc-Fb-cP4" firstAttribute="top" secondItem="B7W-25-oGO" secondAttribute="bottom" constant="15.5" id="v80-IH-OQu"/>
+                                    <constraint firstItem="MQc-Fb-cP4" firstAttribute="leading" secondItem="hWC-Gb-GPH" secondAttribute="leading" id="vZj-GR-jk4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma2-8S-Gwv">
@@ -99,6 +108,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="MQc-Fb-cP4" id="Kt8-eU-w4A"/>
                         <outlet property="loginButton" destination="nAg-7S-Amm" id="ZFL-e5-axA"/>
                         <outlet property="passwordTextField" destination="rfU-f1-71t" id="oDQ-wT-9Jq"/>
                         <outlet property="reatreatTitle" destination="B7W-25-oGO" id="HBe-Lp-F97"/>
@@ -111,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713" y="-67"/>
+            <point key="canvasLocation" x="712.79999999999995" y="-67.016491754122939"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="otM-C9-flO">
