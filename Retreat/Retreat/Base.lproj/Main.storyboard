@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uSW-bW-3Ig">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="txp-jy-LFx">
+            <objects>
+                <viewController id="uSW-bW-3Ig" customClass="LoadingViewController" customModule="Retreat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DEv-fe-Mti">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5jm-qz-2rM"/>
+                    </view>
+                    <connections>
+                        <segue destination="1VO-mW-NJE" kind="show" identifier="alreadyLoggedIn" id="7mY-ai-OpQ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogIn" id="wH3-8y-dDc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUJ-6C-FnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="332"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -259,7 +278,7 @@
                         <outlet property="analyzeButton" destination="LC7-N8-IZi" id="t7M-5f-or5"/>
                         <outlet property="emotionLabel" destination="yJP-ak-Gcb" id="kFy-uN-dU3"/>
                         <outlet property="messageTextField" destination="kaG-18-qhd" id="Feg-TY-cT5"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="backToLoginPage" id="cxt-RR-HpH"/>
+                        <segue destination="uSW-bW-3Ig" kind="show" identifier="backToLoginPage" id="Wdg-SP-EC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yE-bH-Kg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -268,7 +287,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jnm-5k-1Uv"/>
-        <segue reference="cxt-RR-HpH"/>
+        <segue reference="7mY-ai-OpQ"/>
+        <segue reference="wH3-8y-dDc"/>
     </inferredMetricsTieBreakers>
 </document>

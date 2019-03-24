@@ -28,7 +28,7 @@ class LoginViewController: LoginView {
     
     override func viewDidLoad() {
         
-        checkForLogin()
+        
         
         super.viewDidLoad()
         
@@ -43,21 +43,6 @@ class LoginViewController: LoginView {
         newAnimationView.play()
     }
     
-    func checkForLogin() {
-        guard
-            let email = defaults.string(forKey: "email"),
-            let password = defaults.string(forKey: "password") else { return }
-        
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            SVProgressHUD.dismiss()
-            if error != nil {
-                return
-            }
-            else {
-                self.performSegue(withIdentifier: "goToNewsFeedFromLogin", sender: self)
-            }
-        }
-    }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         SVProgressHUD.show(withStatus: "Loading...")

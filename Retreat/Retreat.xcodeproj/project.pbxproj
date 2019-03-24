@@ -11,6 +11,8 @@
 		75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C812246AE79003FD7E9 /* Main.storyboard */; };
 		75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C842246AE79003FD7E9 /* Assets.xcassets */; };
 		75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */; };
+		9E5D71932247FF14000F1D8D /* alien.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D71922247FF14000F1D8D /* alien.json */; };
+		9E5D71952247FF35000F1D8D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D71942247FF35000F1D8D /* LoadingViewController.swift */; };
 		9E6B322522476B8E00277620 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E6B322422476B8D00277620 /* GoogleService-Info.plist */; };
 		9E9E3A5A2246B52800C8F320 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A592246B52800C8F320 /* LoginView.swift */; };
 		9E9E3A5C2246B53800C8F320 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5B2246B53800C8F320 /* RegisterView.swift */; };
@@ -34,6 +36,8 @@
 		75A11C842246AE79003FD7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A11C872246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A11C892246AE79003FD7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E5D71922247FF14000F1D8D /* alien.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = alien.json; sourceTree = SOURCE_ROOT; };
+		9E5D71942247FF35000F1D8D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		9E6B322422476B8D00277620 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E9E3A592246B52800C8F320 /* LoginView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		9E9E3A5B2246B53800C8F320 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			children = (
 				9EECDD042247EEE100A12BBF /* emotions.mlmodel */,
 				9E6B322422476B8D00277620 /* GoogleService-Info.plist */,
+				9E5D71922247FF14000F1D8D /* alien.json */,
 				9ECA227F2246EB35006C558A /* heart.json */,
 				9E9E3A502246B43A00C8F320 /* Controller */,
 				9E9E3A4F2246B43500C8F320 /* View */,
@@ -131,6 +136,7 @@
 				9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */,
 				9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */,
 				9EECDD062247EF7900A12BBF /* NewsFeedViewController.swift */,
+				9E5D71942247FF35000F1D8D /* LoadingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */,
+				9E5D71932247FF14000F1D8D /* alien.json in Resources */,
 				75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */,
 				9ECA22802246EB35006C558A /* heart.json in Resources */,
 				75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */,
@@ -286,6 +293,7 @@
 				9E9E3A5C2246B53800C8F320 /* RegisterView.swift in Sources */,
 				9EECDD032247EECA00A12BBF /* NewsFeedView.swift in Sources */,
 				9EECDD052247EEE100A12BBF /* emotions.mlmodel in Sources */,
+				9E5D71952247FF35000F1D8D /* LoadingViewController.swift in Sources */,
 				9E9E3A5A2246B52800C8F320 /* LoginView.swift in Sources */,
 				9EECDD072247EF7900A12BBF /* NewsFeedViewController.swift in Sources */,
 			);
