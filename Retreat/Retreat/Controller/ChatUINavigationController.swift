@@ -13,6 +13,7 @@ class ChatUINavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        performSegue(withIdentifier: "goToChatRoom", sender: nil)
     }
 
 }
