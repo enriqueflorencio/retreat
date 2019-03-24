@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75535C172247448D00B128BA /* RemoteParticipantView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75535C162247448D00B128BA /* RemoteParticipantView.xib */; };
 		75A11C7E2246AE78003FD7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A11C7D2246AE78003FD7E9 /* AppDelegate.swift */; };
 		75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C812246AE79003FD7E9 /* Main.storyboard */; };
 		75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C842246AE79003FD7E9 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		46B172E331ED16F3902EECBC /* Pods_Retreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Retreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5077E55DB680D146CA0203BC /* Pods-Retreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Retreat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Retreat/Pods-Retreat.release.xcconfig"; sourceTree = "<group>"; };
+		75535C162247448D00B128BA /* RemoteParticipantView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteParticipantView.xib; sourceTree = "<group>"; };
 		75A11C7A2246AE78003FD7E9 /* Retreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Retreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A11C7D2246AE78003FD7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75A11C822246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				75A11C812246AE79003FD7E9 /* Main.storyboard */,
 				75A11C842246AE79003FD7E9 /* Assets.xcassets */,
 				75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */,
+				75535C162247448D00B128BA /* RemoteParticipantView.xib */,
 				75A11C892246AE79003FD7E9 /* Info.plist */,
 			);
 			path = Retreat;
@@ -224,6 +227,7 @@
 			files = (
 				75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */,
 				75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */,
+				75535C172247448D00B128BA /* RemoteParticipantView.xib in Resources */,
 				9ECA22822246EE4F006C558A /* GoogleService-Info.plist in Resources */,
 				9ECA22802246EB35006C558A /* heart.json in Resources */,
 				75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */,

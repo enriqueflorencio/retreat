@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     
     // Configure access token manually for testing, if desired! Create one manually in the console
     // at https://www.twilio.com/console/video/runtime/testing-tools
-    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzkxMmY1Mzg3OTM1OGNmMmY3ODFkMzUxMWM0ZjdkZjhhLTE1NTMzODQzMzAiLCJpc3MiOiJTSzkxMmY1Mzg3OTM1OGNmMmY3ODFkMzUxMWM0ZjdkZjhhIiwic3ViIjoiQUM1M2E3NTYzMWY2MDBlMjAzZDNmYzIyZGQxMGY1OWMxNiIsImV4cCI6MTU1MzM4NzkzMCwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiYm9iIiwidmlkZW8iOnsicm9vbSI6ImVmbG9yZW5jaW8ifX19.yax30tFHnftXgxtFcoFh_MMgcMquW_cyJNbyo70ZmRU"
+    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzkxMmY1Mzg3OTM1OGNmMmY3ODFkMzUxMWM0ZjdkZjhhLTE1NTM0MDM5MTAiLCJpc3MiOiJTSzkxMmY1Mzg3OTM1OGNmMmY3ODFkMzUxMWM0ZjdkZjhhIiwic3ViIjoiQUM1M2E3NTYzMWY2MDBlMjAzZDNmYzIyZGQxMGY1OWMxNiIsImV4cCI6MTU1MzQwNzUxMCwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiZWZsb3JlbmNpbyIsInZpZGVvIjp7InJvb20iOiJlZmxvcmVuY2lvIn19fQ.NHKq04KK1unUrw_MBsXTnoeKry4rJQ5kndGzXA48rsk"
     
     // Configure remote URL to fetch token from
     var tokenUrl = "http://localhost:8000/token.php"
@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         messageLabel?.adjustsFontSizeToFitWidth = true
-        messageLabel?.minimumScaleFactor = 0.75
+        //messageLabel?.minimumScaleFactor = 0.75
         connectButton?.layer.cornerRadius = 4
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(MainViewController.dismissKeyboard))

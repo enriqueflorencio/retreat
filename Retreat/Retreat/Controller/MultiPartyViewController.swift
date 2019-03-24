@@ -27,8 +27,11 @@ class MultiPartyViewController: UIViewController {
     
     var currentDominantSpeaker: TVIRemoteParticipant?
     
-    // MARK: UI Element Outlets and handles
     @IBOutlet weak var messageLabel: UILabel!
+    //@IBOutlet weak var localParticipantVideoView: TVIVideoView!
+    // MARK: UI Element Outlets and handles
+    //@IBOutlet weak var localParticipantAudioIndicator: UIImageView!
+    //@IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var localParticipantVideoView: TVIVideoView!
     @IBOutlet weak var localParticipantAudioIndicator: UIImageView!
     
