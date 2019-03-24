@@ -22,8 +22,14 @@ class LoginViewController: LoginView {
     @IBOutlet var registerButton: UIButton!
     @IBOutlet var animationView: AnimationView!
     
+    // MARK: - Private Variables
+    let defaults = UserDefaults.standard
+    
     
     override func viewDidLoad() {
+        
+        checkForLogin()
+        
         super.viewDidLoad()
         
         let newAnimationView = AnimationView(name: "heart")
@@ -37,6 +43,21 @@ class LoginViewController: LoginView {
         newAnimationView.play()
     }
     
+    func checkForLogin() {
+        guard
+            let email = defaults.string(forKey: "email"),
+            let password = defaults.string(forKey: "password") else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            SVProgressHUD.dismiss()
+            if error != nil {
+                return
+            }
+            else {
+                self.performSegue(withIdentifier: "goToNewsFeedFromLogin", sender: self)
+            }
+        }
+    }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         SVProgressHUD.show(withStatus: "Loading...")
@@ -57,6 +78,8 @@ class LoginViewController: LoginView {
             else {
                 SVProgressHUD.showSuccess(withStatus: "Sucessfully Logged In!")
                 SVProgressHUD.dismiss(withDelay: 1)
+                self.defaults.set(username, forKey: "email")
+                self.defaults.set(password, forKey: "password")
                 self.performSegue(withIdentifier: "goToNewsFeedFromLogin", sender: self)
             }
         }

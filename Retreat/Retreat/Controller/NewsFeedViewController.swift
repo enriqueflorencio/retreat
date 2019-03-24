@@ -9,6 +9,7 @@
 import UIKit
 import NaturalLanguage
 import SVProgressHUD
+import Firebase
 
 class NewsFeedViewController: NewsFeedView {
     
@@ -17,6 +18,8 @@ class NewsFeedViewController: NewsFeedView {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var analyzeButton: UIButton!
     
+    // MARK: - Private variables
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,7 @@ class NewsFeedViewController: NewsFeedView {
         
         let sentimentPredictor = try! NLModel(mlModel: emotions().model)
         let emotion = sentimentPredictor.predictedLabel(for: message)
+        
         emotionLabel.text = emotion!
         
         changeBackgroundColor(emotion!)
@@ -55,10 +59,34 @@ class NewsFeedViewController: NewsFeedView {
             else if emotion == "fear" {
                 self.view.backgroundColor = UIColor.flatBlueColorDark()
             }
+            else if emotion == "joy" {
+                self.view.backgroundColor = UIColor.flatSkyBlue()
+            }
             else {
                 self.view.backgroundColor = UIColor.flatPurple()
             }
         }
+    }
+    
+    @IBAction func logoutPressed(_ sender: UIButton) {
+        SVProgressHUD.show(withStatus: "Logging out..")
+        signOut()
+    }
+    
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            defaults.set("", forKey: "email")
+            defaults.set("", forKey: "password")
+            SVProgressHUD.showSuccess(withStatus: "Logged out successfully")
+            performSegue(withIdentifier: "backToLoginPage", sender: nil)
+            
+        } catch {
+            print("Error logging out, \(error)")
+            SVProgressHUD.showError(withStatus: "Error Logging Out")
+        }
+        
+        
     }
     
 }

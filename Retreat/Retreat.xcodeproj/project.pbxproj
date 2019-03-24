@@ -11,7 +11,6 @@
 		75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C812246AE79003FD7E9 /* Main.storyboard */; };
 		75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C842246AE79003FD7E9 /* Assets.xcassets */; };
 		75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */; };
-		9E445E3D2246DD0F003B263C /* NewsFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E445E3C2246DD0F003B263C /* NewsFeedTableViewController.swift */; };
 		9E6B322522476B8E00277620 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E6B322422476B8D00277620 /* GoogleService-Info.plist */; };
 		9E9E3A5A2246B52800C8F320 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A592246B52800C8F320 /* LoginView.swift */; };
 		9E9E3A5C2246B53800C8F320 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5B2246B53800C8F320 /* RegisterView.swift */; };
@@ -35,7 +34,6 @@
 		75A11C842246AE79003FD7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A11C872246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A11C892246AE79003FD7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E445E3C2246DD0F003B263C /* NewsFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewController.swift; sourceTree = "<group>"; };
 		9E6B322422476B8D00277620 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E9E3A592246B52800C8F320 /* LoginView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		9E9E3A5B2246B53800C8F320 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				9E9E3A5D2246B55C00C8F320 /* LoginViewController.swift */,
 				9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */,
 				9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */,
-				9E445E3C2246DD0F003B263C /* NewsFeedTableViewController.swift */,
 				9EECDD062247EF7900A12BBF /* NewsFeedViewController.swift */,
 			);
 			path = Controller;
@@ -285,7 +282,6 @@
 				9E9E3A602246B56A00C8F320 /* RegisterViewController.swift in Sources */,
 				9E9E3A662246B61D00C8F320 /* ChatUINavigationController.swift in Sources */,
 				75A11C7E2246AE78003FD7E9 /* AppDelegate.swift in Sources */,
-				9E445E3D2246DD0F003B263C /* NewsFeedTableViewController.swift in Sources */,
 				9E9E3A682246B63400C8F320 /* ChatUINavigationView.swift in Sources */,
 				9E9E3A5C2246B53800C8F320 /* RegisterView.swift in Sources */,
 				9EECDD032247EECA00A12BBF /* NewsFeedView.swift in Sources */,

@@ -21,6 +21,9 @@ class RegisterViewController: RegisterView {
     @IBOutlet var registerButton: UIButton!
     @IBOutlet var loginButton: UIButton!
     
+    // MARK: - Private Variables
+    let defaults = UserDefaults.standard
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +54,8 @@ class RegisterViewController: RegisterView {
             else {
                 SVProgressHUD.showSuccess(withStatus: "Sucessfully Registered!")
                 SVProgressHUD.dismiss(withDelay: 1)
+                self.defaults.set(username, forKey: "email")
+                self.defaults.set(password, forKey: "password")
                 self.performSegue(withIdentifier: "goToNewsFeedFromRegister", sender: nil)
             }
         }
