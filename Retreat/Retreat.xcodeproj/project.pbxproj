@@ -11,6 +11,12 @@
 		75A11C832246AE79003FD7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C812246AE79003FD7E9 /* Main.storyboard */; };
 		75A11C852246AE79003FD7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C842246AE79003FD7E9 /* Assets.xcassets */; };
 		75A11C882246AE79003FD7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A11C862246AE79003FD7E9 /* LaunchScreen.storyboard */; };
+		75B13B9A224703410016D15D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B13B99224703410016D15D /* MainViewController.swift */; };
+		75B13B9C224703690016D15D /* MultiPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B13B9B224703690016D15D /* MultiPartyViewController.swift */; };
+		75B13B9E224703A00016D15D /* RemoteParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B13B9D224703A00016D15D /* RemoteParticipantView.swift */; };
+		75B13BA1224703E80016D15D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B13BA0224703E80016D15D /* SettingsTableViewController.swift */; };
+		75B13BA32247040B0016D15D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B13BA22247040B0016D15D /* Settings.swift */; };
+		75B13BA5224704270016D15D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B13BA4224704270016D15D /* Utils.swift */; };
 		9E445E3D2246DD0F003B263C /* NewsFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E445E3C2246DD0F003B263C /* NewsFeedTableViewController.swift */; };
 		9E9E3A5A2246B52800C8F320 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A592246B52800C8F320 /* LoginView.swift */; };
 		9E9E3A5C2246B53800C8F320 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E3A5B2246B53800C8F320 /* RegisterView.swift */; };
@@ -32,6 +38,12 @@
 		75A11C842246AE79003FD7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A11C872246AE79003FD7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A11C892246AE79003FD7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B13B99224703410016D15D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		75B13B9B224703690016D15D /* MultiPartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartyViewController.swift; sourceTree = "<group>"; };
+		75B13B9D224703A00016D15D /* RemoteParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteParticipantView.swift; sourceTree = "<group>"; };
+		75B13BA0224703E80016D15D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		75B13BA22247040B0016D15D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		75B13BA4224704270016D15D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9E445E3C2246DD0F003B263C /* NewsFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewController.swift; sourceTree = "<group>"; };
 		9E9E3A592246B52800C8F320 /* LoginView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		9E9E3A5B2246B53800C8F320 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -80,6 +92,7 @@
 				9ECA22812246EE4F006C558A /* GoogleService-Info.plist */,
 				9ECA227F2246EB35006C558A /* heart.json */,
 				9E9E3A502246B43A00C8F320 /* Controller */,
+				75B13B9F224703B80016D15D /* Utils */,
 				9E9E3A4F2246B43500C8F320 /* View */,
 				9E9E3A4E2246B41F00C8F320 /* Model */,
 				75A11C7D2246AE78003FD7E9 /* AppDelegate.swift */,
@@ -89,6 +102,16 @@
 				75A11C892246AE79003FD7E9 /* Info.plist */,
 			);
 			path = Retreat;
+			sourceTree = "<group>";
+		};
+		75B13B9F224703B80016D15D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75B13BA0224703E80016D15D /* SettingsTableViewController.swift */,
+				75B13BA22247040B0016D15D /* Settings.swift */,
+				75B13BA4224704270016D15D /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		872A4EAD34FA2AD2F44DE75F /* Pods */ = {
@@ -124,6 +147,9 @@
 				9E9E3A5F2246B56A00C8F320 /* RegisterViewController.swift */,
 				9E9E3A652246B61D00C8F320 /* ChatUINavigationController.swift */,
 				9E445E3C2246DD0F003B263C /* NewsFeedTableViewController.swift */,
+				75B13B99224703410016D15D /* MainViewController.swift */,
+				75B13B9B224703690016D15D /* MultiPartyViewController.swift */,
+				75B13B9D224703A00016D15D /* RemoteParticipantView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,10 +292,16 @@
 			files = (
 				9E9E3A5E2246B55C00C8F320 /* LoginViewController.swift in Sources */,
 				9E9E3A602246B56A00C8F320 /* RegisterViewController.swift in Sources */,
+				75B13BA32247040B0016D15D /* Settings.swift in Sources */,
+				75B13BA5224704270016D15D /* Utils.swift in Sources */,
+				75B13B9E224703A00016D15D /* RemoteParticipantView.swift in Sources */,
 				9E9E3A662246B61D00C8F320 /* ChatUINavigationController.swift in Sources */,
 				75A11C7E2246AE78003FD7E9 /* AppDelegate.swift in Sources */,
 				9E445E3D2246DD0F003B263C /* NewsFeedTableViewController.swift in Sources */,
+				75B13B9C224703690016D15D /* MultiPartyViewController.swift in Sources */,
 				9E9E3A682246B63400C8F320 /* ChatUINavigationView.swift in Sources */,
+				75B13BA1224703E80016D15D /* SettingsTableViewController.swift in Sources */,
+				75B13B9A224703410016D15D /* MainViewController.swift in Sources */,
 				9E9E3A5C2246B53800C8F320 /* RegisterView.swift in Sources */,
 				9E9E3A5A2246B52800C8F320 /* LoginView.swift in Sources */,
 			);
@@ -419,13 +451,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 48ZHJ48H3S;
+				DEVELOPMENT_TEAM = 2E24SPH2ZV;
 				INFOPLIST_FILE = Retreat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BizetRodriguez.Retreat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eflorencio.Retreat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,13 +470,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 48ZHJ48H3S;
+				DEVELOPMENT_TEAM = 2E24SPH2ZV;
 				INFOPLIST_FILE = Retreat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BizetRodriguez.Retreat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eflorencio.Retreat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
