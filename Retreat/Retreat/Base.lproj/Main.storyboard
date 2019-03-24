@@ -213,9 +213,9 @@
                         <viewLayoutGuide key="safeArea" id="FGW-aB-EgL"/>
                     </view>
                     <connections>
-                        <outlet property="localParticipantAudioIndicator" destination="lPd-hL-PfR" id="muv-jS-b9m"/>
                         <outlet property="localParticipantVideoView" destination="7zf-gC-ctZ" id="MXw-zC-Awc"/>
                         <outlet property="messageLabel" destination="1mu-Cj-pnd" id="JmD-un-Rj8"/>
+                        <outlet property="participantAudioIndicator" destination="lPd-hL-PfR" id="fms-5O-6W2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qD5-qQ-aCo" userLabel="First Responder" sceneMemberID="firstResponder"/>

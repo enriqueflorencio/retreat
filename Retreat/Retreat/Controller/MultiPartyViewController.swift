@@ -30,17 +30,21 @@ class MultiPartyViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     //@IBOutlet weak var localParticipantVideoView: TVIVideoView!
     // MARK: UI Element Outlets and handles
-    //@IBOutlet weak var localParticipantAudioIndicator: UIImageView!
+    //@IBOutlet weak var participantAudioIndicator: UIImageView!
     //@IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var localParticipantVideoView: TVIVideoView!
-    @IBOutlet weak var localParticipantAudioIndicator: UIImageView!
+//    @IBOutlet weak var participantAudioIndicator: UIImageView!
+    @IBOutlet var participantAudioIndicator: UIImageView!
+    
     
     // MARK: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        localParticipantAudioIndicator.layer.cornerRadius = localParticipantAudioIndicator.bounds.size.width / 2.0
-        localParticipantAudioIndicator.layer.backgroundColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        guard let _ = participantAudioIndicator else { fatalError("Audio thingie is beign weird") }
+    
+        participantAudioIndicator.layer.cornerRadius = participantAudioIndicator.bounds.size.width / 2.0
+        participantAudioIndicator.layer.backgroundColor = UIColor.black.withAlphaComponent(0.5).cgColor
         
         messageLabel.adjustsFontSizeToFitWidth = true;
         messageLabel.minimumScaleFactor = 0.75;
@@ -88,12 +92,12 @@ class MultiPartyViewController: UIViewController {
         localParticipantVideoView.frame = CGRect(origin: CGPoint(x: layoutFrame.minX, y: topY),
                                                  size: videoViewSize).insetBy(dx: 4, dy: 4)
         
-        let audioIndicatorSize = localParticipantAudioIndicator.intrinsicContentSize
+        let audioIndicatorSize = participantAudioIndicator.intrinsicContentSize
         let audioIndicatorOrigin = CGPoint(x: layoutFrame.minX + videoViewWidth - audioIndicatorSize.width - MultiPartyViewController.kAudioIndicatorPadding,
                                            y: videoViewHeight + topY - audioIndicatorSize.height - MultiPartyViewController.kAudioIndicatorPadding)
         
         // Layout remote Participants
-        localParticipantAudioIndicator.frame = CGRect(origin: audioIndicatorOrigin, size: audioIndicatorSize)
+        participantAudioIndicator.frame = CGRect(origin: audioIndicatorOrigin, size: audioIndicatorSize)
         
         var index = 0
         for remoteParticipantView in remoteParticipantViews {
@@ -359,7 +363,7 @@ class MultiPartyViewController: UIViewController {
     }
     
     func updateLocalAudioState(hasAudio: Bool) {
-        localParticipantAudioIndicator.isHidden = hasAudio;
+        participantAudioIndicator.isHidden = hasAudio;
     }
 }
 
